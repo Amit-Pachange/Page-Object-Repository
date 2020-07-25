@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PageObjectModelSuite]">
+  <listeners>
+    <listener class-name="com.utilitypackage.ListenerTest"/>
+  </listeners>
+  <test thread-count="5" name="PageObjectModelTest(failed)">
+    <classes>
+      <class name="com.testpackage.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testpackage.LoginTest -->
+      <class name="com.testpackage.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectContactTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testpackage.ContactsPageTest -->
+      <class name="com.testpackage.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="dealPageTest"/>
+          <include name="contactsLinkTest"/>
+        </methods>
+      </class> <!-- com.testpackage.HomePageTest -->
+    </classes>
+  </test> <!-- PageObjectModelTest(failed) -->
+</suite> <!-- Failed suite [PageObjectModelSuite] -->

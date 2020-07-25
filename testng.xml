@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PageObjectModelSuite" verbose="1">
+	<listeners>
+		<listener class-name="com.utilitypackage.ListenerTest" />
+	</listeners>
+
+	<test name="PageObjectModelTest">
+		<classes>
+			<class name="com.testpackage.LoginTest" />
+			<class name="com.testpackage.HomePageTest" />
+			<class name="com.testpackage.ContactsPageTest" />
+		</classes>
+	</test>
+</suite>
